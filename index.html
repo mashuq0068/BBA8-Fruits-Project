@@ -15,6 +15,7 @@
         extend: {
           colors: {
             clifford: '#da373d',
+           ' banner-linear':' linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%)'
           }
         }
       }
@@ -23,6 +24,22 @@
   <style>
     .font-lato{
         font-family: 'Lato', sans-serif;
+    }
+    #slide1{
+      background-image: url(./images/banner1.png), linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);
+      background-blend-mode: overlay;
+    }
+    .bg-banner-linear2{
+      background-image: url(./images/banner2.png) ,linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);
+      background-blend-mode: overlay;
+    }
+    .bg-banner-linear3{
+      background-image:url(./images/banner3.png) ,linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);
+      background-blend-mode: overlay;
+    }
+    .bg-banner-linear4{
+      background-image: url(./images/banner4.png) ,linear-gradient(180deg, #121212 0%, rgba(18, 18, 18, 0.00) 100%);
+      background-blend-mode: overlay;
     }
   </style>
 
@@ -74,8 +91,66 @@
         </label>
         </div>
   </div>
-        
 </nav>
+  <!-- slide section -->
+  <div class="carousel w-full lg:mt-16  ">
+    <div id="slide1" class="carousel-item relative w-full ">
+     
+     
+    <img src="./images/banner1.png" alt="">
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 items-center bg-banner-linear1 ">
+       <a href="#slide4" class="btn btn-circle">❮</a> 
+        <div class="text-center text-[#FFF] space-y-6 z-10">
+          <h1 class="text-7xl font-extrabold  ">Exotic tastes at your <br> doorstep</h1>
+          <p class="text-[20px] font-normal">We supply highly quality organic products</p>
+          <button class="text-[20px] font-extrabold bg-[#F85559] px-[30px] py-[20px] rounded-lg">Shop Now</button>
+        </div>
+        <a href="#slide2" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <!-- slide2 -->
+    <div id="slide2" class="carousel-item relative w-full bg-banner-linear2 ">
+      
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 items-center ">
+        <a href="#slide1" class="btn btn-circle">❮</a> 
+        <div class="text-center text-[#FFF] space-y-6 z-10">
+          <h1 class="text-7xl font-extrabold  ">Exotic tastes at your <br> doorstep</h1>
+          <p class="text-[20px] font-normal">We supply highly quality organic products</p>
+          <button class="text-[20px] font-extrabold bg-[#F85559] px-[30px] py-[20px] rounded-lg">Shop Now</button>
+        </div>
+        <a href="#slide3" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <!-- slide3 -->
+    <div id="slide3" class="carousel-item relative w-full bg-banner-linear3">
+      
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 items-center">
+        <a href="#slide2" class="btn btn-circle">❮</a> 
+        <div class="text-center text-[#FFF] space-y-6 z-10">
+          <h1 class="text-7xl font-extrabold  ">Exotic tastes at your <br> doorstep</h1>
+          <p class="text-[20px] font-normal">We supply highly quality organic products</p>
+          <button class="text-[20px] font-extrabold bg-[#F85559] px-[30px] py-[20px] rounded-lg">Shop Now</button>
+        </div>
+        <a href="#slide4" class="btn btn-circle">❯</a>
+      </div>
+    </div> 
+    <!-- slide4 -->
+    <div id="slide4" class="carousel-item relative w-full bg-banner-linear4">
+      
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 items-center">
+        <a href="#slide3" class="btn btn-circle">❮</a> 
+        <div class="text-center text-[#FFF] space-y-6 z-10">
+          <h1 class="text-7xl font-extrabold  ">Exotic tastes at your <br> doorstep</h1>
+          <p class="text-[20px] font-normal">We supply highly quality organic products</p>
+          <button class="text-[20px] font-extrabold bg-[#F85559] px-[30px] py-[20px] rounded-lg">Shop Now</button>
+        </div>
+        <a href="#slide1" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+    
+  </div>
+        
+
     </header>
     <main class="lg:max-w-5xl xl:max-w-6xl 2xl:max-w-7xl space-y-36 mx-auto">
 <section>
